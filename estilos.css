@@ -42,6 +42,8 @@ main {
 header{
 	background:url(img/back.jpg) no-repeat center center fixed;
 	background-size:cover;
+    top: 4px;
+    left: 20px;
 
 }
 
@@ -88,11 +90,16 @@ section h2{
     color: black;
     border-radius: 5px;
     margin: 10px;
+    top: 2px;
+    left: 1s0px;
+    
     
 }
 .jumbotron{
     background-color: #D9DADA;
     border-radius: 10px;
+    top: 2px;
+    left: 60px;
     
 }
 a .input {
@@ -114,6 +121,8 @@ a .input {
     grid-template-columns: repeat(3, 500px);
     padding: 10px;
     border-spacing: 10px 5px;
+    top: 2px;
+    left: 60px;
 }
 div.card:hover{
     transform: rotate(-3deg);
@@ -129,6 +138,7 @@ div.card:hover{
     padding: 50px;
     box-shadow: 0px 26px 45px -14px rgb(0 0 0 / 80%);
     
+    
 }
 .card hr{
     width: 100%;
@@ -143,6 +153,8 @@ div.card:hover{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 0 200px;
+    top: 2px;
+    left: 60px;
     margin-right:px;
 }
 
@@ -162,6 +174,8 @@ p.centrado{
 .box{
     display: grid;
     grid-template-rows: 3fr 3fr;
+    top: 2px;
+    left: 60px;
 }
 
 p {
@@ -182,6 +196,8 @@ footer {
     background-color: black;
     color: white;
     padding: 60px 300px;
+    top: 4px;
+    left: 60px;
 }
 footer ul {
     list-style-type: none;
@@ -210,25 +226,68 @@ nav {
 nav ul {
     margin-right: 350px;
 }
-@media screen and(min-width:780px)and(max-width:1024px){
-    .header{
 
+@media screen and (max-width:980px) {
+    .container {
+        width:98%;
     }
- 
-    .container{
-        width: 50%;
+    section {
+        width:94%;
+    }
+    footer>div{
+        display: grid;
+        grid-template-columns:none;
+    }
+    nav ul {
+        margin-right: 5000px;
+    }
+    .contenedor-blog{
+        display: grid;
+        grid-template-columns: none;
+
     }
 }
 
-@media screen (min-width:480px)and(max-width:780px){
-    .main{
-        width: 70%;
+@media screen and (max-width:700px) {
+    section {
+        float:none;
+        width:96%;
     }
+    nav, section {
+        font-size:1.2em;
+    }
+        nav ul {
+            display:;
+            text-align: left;
+     
+    }
+    footer>div{
+        left: 0px;
+        
+    }
+    
 }
 
-@media screen and (max-width:px){
-    .header{
-        height: 80px;
-        background-color: #01060c;
+@media screen and (max-width:480px) {
+    
+    nav, section {
+        font-size:1.5em;
     }
+    section {
+        width:94%;
+    }
+    nav ul {
+        float:left;
+        clear:none;
+        width:50%;
+    }
+    nav ul li {
+       display: flex;
+       flex: none;
+        margin: 0px;
+        top: 0px;
+        padding: 0px;
+        list-style: none;
+    }
+
 }
