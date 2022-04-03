@@ -210,7 +210,25 @@ nav {
 nav ul {
     margin-right: 350px;
 }
+@media screen and(min-width:780px)and(max-width:1024px){
+    .header{
 
-img{
-    width: 75%;
+    }
+ 
+    .container{
+        width: 50%;
+    }
+}
+
+@media screen (min-width:480px)and(max-width:780px){
+    .main{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:px){
+    .header{
+        height: 80px;
+        background-color: #01060c;
+    }
 }
