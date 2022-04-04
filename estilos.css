@@ -152,10 +152,7 @@ div.card:hover{
 .testimonios{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 0 200px;
-    top: 2px;
-    left: 60px;
-    margin-right:px;
+   
 }
 
 .testimonios .card{
@@ -169,13 +166,6 @@ p.centrado{
     text-align: center;
     
 
-}
-
-.box{
-    display: grid;
-    grid-template-rows: 3fr 3fr;
-    top: 2px;
-    left: 60px;
 }
 
 p {
@@ -218,11 +208,9 @@ footer>div {
     grid-template-columns: (30fr 15fr 25fr);
 }
 
-
-nav {
+nav{
     display: flex;
 }
-
 nav ul {
     margin-right: 350px;
 }
@@ -239,12 +227,15 @@ nav ul {
         grid-template-columns:none;
     }
     nav ul {
-        margin-right: 5000px;
+        margin-right: 10px;
     }
     .contenedor-blog{
         display: grid;
         grid-template-columns: none;
 
+    }
+    .testimonios .card{
+        width: 70%;
     }
 }
 
@@ -253,17 +244,23 @@ nav ul {
         float:none;
         width:96%;
     }
-    nav, section {
-        font-size:1.2em;
-    }
         nav ul {
             display:;
             text-align: left;
      
     }
-    footer>div{
+    footer{
+        display: grid;
+        grid-template-columns: none;
         left: 0px;
         
+    }
+    .section.testimonios.card{
+        display: grid;
+        grid-template-columns: none;
+    }
+    nav ul {
+        margin: 0px;
     }
     
 }
@@ -273,8 +270,11 @@ nav ul {
     nav, section {
         font-size:1.5em;
     }
+    .header{
+        width: 100%;
+    }
     section {
-        width:94%;
+        width:100%;
     }
     nav ul {
         float:left;
