@@ -1,7 +1,6 @@
 *{
     padding: 0;
     box-sizing: border-box;
-    width: 100%;
 }
 
 body{
@@ -24,7 +23,7 @@ main {
 }
 
 .contenedor{
-    padding: 60px o;
+    padding: 60px;
     margin: auto;
     overflow: hidden; 
     line-height:0;
@@ -32,6 +31,7 @@ main {
 }
 .circular--square{
     border-radius: 50%;
+
 }
 
 .title{
@@ -115,14 +115,18 @@ a .input {
    font-size: 50px;
 }
 
-.contenedor-blog .card{
+.contenedor-blog {
+    text-align: center;
+     padding: 30px 500px 0 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border-spacing: 10px 5px;  
-  
+    padding: 10px;
+    border-spacing: 10px 5px;
+    top: 2px;
+    
 }
 .contenedor-blog{
-    width: 70%;
+    width: 100%;
 }
 div.card:hover{
     transform: rotate(-3deg);
@@ -148,10 +152,7 @@ div.card:hover{
     max-height: 320px;
     border: 1px solid black;
 }
-.box {
-    display: grid;
-    grid-template-rows: 3fr 3fr;
-}
+
 
 .testimonios{
     display: grid;
@@ -189,7 +190,7 @@ footer {
     margin-top: auto;
     background-color: black;
     color: white;
-    padding: 60px 60px;
+    padding: 60px 300px;
     top: 4px;
     left: 60px;
 }
@@ -212,6 +213,9 @@ footer>div {
     grid-template-columns: (30fr 15fr 25fr);
 }
 
+nav{
+    display: flex;
+}
 nav ul {
     margin-right: 350px;
 }
@@ -236,6 +240,15 @@ nav ul {
     .testimonios .card{
         width: 70%;
     }
+    .title-fo{
+        text-align: left;
+    }
+    nav{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    
 }
 
 @media screen and (max-width:700px) {
@@ -253,9 +266,6 @@ nav ul {
         display: grid;
         grid-template-columns: none;
     }
-    nav ul {
-        margin: 0px;
-    }
     
 }
 
@@ -264,18 +274,26 @@ nav ul {
     nav, section {
         font-size:1.5em;
     }
-    .header{
-        width: 100%;
-    }
+    
     section {
         width:100%;
     }
    
     nav ul li {
        display: flex;
-       flex-direction: column;
+       flex-direction: row;
         
       
     }
-
-}
+    .title-fo{
+        color: #6dbdff;
+        font-size: 30px;
+        text-align: left;
+        
+    
+    }
+    footer div ul li{
+        display: flex;
+        flex-direction: row;
+    
+    
