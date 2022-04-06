@@ -1,11 +1,12 @@
 *{
     padding: 0;
     box-sizing: border-box;
+    width: 100%;
 }
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
+    
 
 }
 header{
@@ -27,7 +28,7 @@ main {
     margin: auto;
     overflow: hidden; 
     line-height:0;
-    width: 85%;
+  
 }
 .circular--square{
     border-radius: 50%;
@@ -114,15 +115,14 @@ a .input {
    font-size: 50px;
 }
 
-.contenedor-blog {
-    text-align: center;
-     padding: 30px 50px 0 0;
+.contenedor-blog .card{
     display: grid;
-    grid-template-columns: repeat(3, 500px);
-    padding: 10px;
-    border-spacing: 10px 5px;
-    top: 2px;
-    left: 60px;
+    grid-template-columns: repeat(3, 1fr);
+    border-spacing: 10px 5px;  
+  
+}
+.contenedor-blog{
+    width: 70%;
 }
 div.card:hover{
     transform: rotate(-3deg);
@@ -147,6 +147,10 @@ div.card:hover{
 .card img {
     max-height: 320px;
     border: 1px solid black;
+}
+.box {
+    display: grid;
+    grid-template-rows: 3fr 3fr;
 }
 
 .testimonios{
@@ -185,7 +189,7 @@ footer {
     margin-top: auto;
     background-color: black;
     color: white;
-    padding: 60px 300px;
+    padding: 60px 60px;
     top: 4px;
     left: 60px;
 }
@@ -208,27 +212,24 @@ footer>div {
     grid-template-columns: (30fr 15fr 25fr);
 }
 
-nav{
-    display: flex;
-}
 nav ul {
     margin-right: 350px;
 }
 
 @media screen and (max-width:980px) {
     .container {
-        width:98%;
+        width: 100%;
     }
     section {
         width:94%;
     }
     footer>div{
-        display: grid;
-        grid-template-columns:none;
+        display: flex;
+        flex-direction: row;
     }
-    nav ul {
-        margin-right: 10px;
-    }
+    /* nav ul {
+        margin-right: 30px;
+    } */
     .contenedor-blog{
         display: grid;
         grid-template-columns: none;
@@ -244,17 +245,12 @@ nav ul {
         float:none;
         width:96%;
     }
-        nav ul {
-            display:;
-            text-align: left;
-     
-    }
-    footer{
-        display: grid;
-        grid-template-columns: none;
-        left: 0px;
+     nav ul {
+         display: flex;
+         flex-direction: row;
         
     }
+   
     .section.testimonios.card{
         display: grid;
         grid-template-columns: none;
@@ -276,18 +272,12 @@ nav ul {
     section {
         width:100%;
     }
-    nav ul {
-        float:left;
-        clear:none;
-        width:50%;
-    }
+   
     nav ul li {
        display: flex;
-       flex: none;
-        margin: 0px;
-        top: 0px;
-        padding: 0px;
-        list-style: none;
+       flex-direction: column;
+        
+      
     }
 
 }
