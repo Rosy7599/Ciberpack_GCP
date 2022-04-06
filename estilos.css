@@ -227,9 +227,7 @@ nav ul {
         display: flex;
         flex-direction: row;
     }
-    /* nav ul {
-        margin-right: 30px;
-    } */
+    
     .contenedor-blog{
         display: grid;
         grid-template-columns: none;
