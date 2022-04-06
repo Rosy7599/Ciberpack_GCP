@@ -217,7 +217,7 @@ nav{
     display: flex;
 }
 nav ul {
-    margin-right: 350px;
+    margin-right: 300px;
 }
 
 @media screen and (max-width:980px) {
