@@ -217,17 +217,16 @@ nav ul a {
     display: grid;
     grid-template-columns: (100fr 15fr 25fr);
 }  */
- nav{
-    display: flex;
-} 
+ 
 nav ul{
     display: flex;
     flex-direction: column;
     align-items: center; 
-    margin-right: 10rem;  
+    
 }
-li{
-   
+ul{
+    text-align: center;
+    margin-left: 150px;
 }
 
 .sp{
@@ -345,7 +344,6 @@ footer {
    nav ul li {
     display: flex;
     flex-direction: row;
-    
    
 } 
    
